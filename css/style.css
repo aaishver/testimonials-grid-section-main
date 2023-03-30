@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    width: 100%;
+}
+main{
+   padding-top: 4rem;
+   padding-bottom: 2rem;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+}
+h1{
+    padding: 18px 0;
+    line-height: 1.2;
+    color: #fff;
+    font-size:larger;
+}
+p{
+    font-size: 13px;
+    color:hsl(0, 0%, 81%);
+}
+img{
+    margin-right: 10px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/*---------- css of both sides of testimonial ----------*/
+.right{
+    box-shadow: 10px 10px 20px hsl(0, 0%, 81%);
+    border-radius: 10px;
+    background-color: #fff;
+    flex: 1;
+}
+.left{
+    flex: 3;
+}
+
+
+/*-----------css of top sections in each box---------- */
+.top-section{
+    display: flex;
+}
+.name-sect{
+    align-self: center;
+}
+.bottom-section{
+    line-height: 1.5;
+}
+
+/* ---------------css of flexboxes in --------------*/
+.flexbox1{
+    display: flex;
+}
+.flexbox2{
+    display: flex;
+}
+
+
+/* ---------- universal boxes css ---------- */
+.boxes{
+    box-shadow: 10px 10px 20px hsl(0, 0%, 81%);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+
+/* ---------- all box css section ---------- */
+.box1{
+    margin-bottom: 20px;
+    background-color:  hsl(263, 55%, 52%);
+    flex: 2.1;
+}
+.box2{
+    margin: 0 20px 20px;
+    background-color: hsl(217, 19%, 35%);
+    flex: 0.9;
+}
+.box3{
+    background-color:#fff ;
+    flex: 0.9;
+}
+.box3 h1{
+    color:hsl(219, 29%, 14%)  ;
+}
+.box3 p{
+    color: hsl(217, 19%, 35%) ;
+}
+
+.box4{
+    margin: 0 20px;
+    background-color:hsl(219, 29%, 14%) ;
+    flex: 2.1;
+}
+.box5{
+    box-shadow: none;
+}
+.box5 p{
+    color:  hsl(217, 19%, 35%);
+}
+.box5 h1{
+    color:  hsl(219, 29%, 14%);
+}
+.name{
+    font-weight: bold;
+}
+
+@media (max-width:950px){
+    main{
+        padding: 5rem;
+        flex-direction: column;
+    }
+    .flexbox1{
+        flex-direction: column;
+    }
+    .flexbox2{
+        flex-direction: column;
+    }
+    .boxes{
+    margin: 10px 20px;
+    }
+    .right{
+        box-shadow: none;
+        background: none;
+    }
+    .box5{
+        box-shadow: 10px 10px 20px hsl(0, 0%, 81%);
+        background-color: #fff;
+    }
+}
+@media (max-width:500px){
+    main{
+        padding: 3rem 1rem;
+    }
+}
+@media (max-width:380px){
+    main{
+        padding: 3rem 0;
+    }
+}
